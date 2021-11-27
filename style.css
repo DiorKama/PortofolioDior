@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 header{
     position: fixed;
@@ -50,18 +51,19 @@ header .navbar li a:hover{
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(58, 57, 57, 0.6)),url('devellope.jpg') center
         no-repeat;
         background-size: cover;
+        background-position: center;
         height: 850px;
 }
 .text{
     position: relative;
     top: 250px;
-    left: 100px;
+    left: 80px;
     color: #ffffff;
 }
 .propos{
     text-align: center;
 }
-.propos::after{
+/*.propos::after{
     content: "";
     position: absolute;
     bottom: 6%;
@@ -79,7 +81,7 @@ header .navbar li a:hover{
     height: 3px;
     background-color: #cc0033;
   
-}
+}*/
 h4{
     color: #cc0033;
 }
@@ -105,7 +107,7 @@ header.sticky .navbar li a{
 .propos1{
     text-align: center;
 }
-.competent::after{
+/*.competent::after{
     content: "";
     position: absolute;
     bottom: 6%;
@@ -123,7 +125,7 @@ header.sticky .navbar li a{
     height: 3px;
     background-color: #cc0033;
   
-}
+}*/
 .card{
     width: 329px;
     height: 322px;
@@ -132,4 +134,82 @@ header.sticky .navbar li a{
 }
 .card:hover{
     background: crimson;
+}
+footer{
+    background: #000;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+body{
+    overflow-x: hidden;
+}
+.subheading{
+    padding: 11px;
+    width: 30px;
+    height: 15px;
+    background-color: #cc0033;
+    color: #ffffff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+@media (max-width:991px) {
+    header, header.sticky{
+        padding: 10px 20px;
+    }
+    header .navbar li{
+        margin-left: 0px;
+    }
+    header .navbar li a{
+        text-decoration: none;
+        color: #000;
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+   
+    .menutoggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-image: url("burger.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+
+    }
+    .menutoggle.active{
+        background-image: url("close.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    section{
+        padding: 20px;
+    }
+    .text{
+        margin-bottom: 130px;
+        margin-right: 10px;
+    }    
+}
+@media (max-width:360px) {
+    .text h3{
+        font-size: 20px;
+    }
+    .ban{
+        width: 400px;
+        height: 400px;
+    }
+    .contact{
+        margin-bottom: 300px;
+    }
+}
+@media (max-width:750px) {
+    .text1{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    body{
+        width: 100%;
+    }
 }

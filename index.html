@@ -5,56 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https : //fonts.googleapis.com/css2? family= Artifika & display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Portofolio</title>
 </head>
 <body>
     <header>
         <a href="#" class="logo"><span>K</span>AMA</a>
+        <div class="menutoggle"onclick="toggleMenu();"></div>
         <ul class="navbar">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">compétences</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#accueil" onclick="toggleMenu();">Accueil</a></li>
+            <li><a href="#a propos" onclick="toggleMenu();">A propos</a></li>
+            <li><a href="#competence" onclick="toggleMenu();">compétences</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#realisations" onclick="toggleMenu();">Réalisations</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
     </header>
     <main>
-        <section class="banniere">
+        <section class="banniere" id="accueil">
             <div class="row">
             <div class=" text col-lg-6 col-md-6 col-xs-6">
-                <h1>DIOR KAMA</h1>
-                <h3>Designer,Développeuse web/mobile</h3>
+              <h1>DIOR KAMA</h1>
+               <h3 id="text"></h3>
                 <p>
-                    <a href="#" style="text-decoration: none;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" style="color: #0651E4; width: 30px; height: 30px;">
-                          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                        </svg>
-                      </a>
-                      <a href="#" class="mx-5" style="text-decoration: none;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16" style="color: #0651E4; width: 30px; height: 30px;">
-                          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                        </svg>
-                      </a>
-                      <a href="#" class="mx-4" style="text-decoration: none;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" style="color: #0651E4; width: 30px; height: 30px;">
-                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                          </svg>
-                      </a>
+                   <a href="#" style="text-decoration: none;">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" style="color: #0651E4; width: 30px; height: 30px;">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                   </svg>
+                   </a>
+                   <a href="#" class="mx-5" style="text-decoration: none;">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16" style="color: #0651E4; width: 30px; height: 30px;">
+                   <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                   </svg>
+                    </a>
+                    <a href="#" class="mx-4" style="text-decoration: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" style="color: #0651E4; width: 30px; height: 30px;">
+                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                      </svg>
+                    </a>
                 </p>
             </div>
             <div class="col-lg-6 col-md-6 col-xs-6">
-            <img src="baniere.png" style="height: 550px; width: 485; " class="mt-4">
+            <img src="baniere.png" style="height: 550px; width: 388px; margin-bottom: 20px; " class="ban mt-4">
             </div>
             </div>
         </section>
-        <section class="container-fluid bg-white" width="100%" height="auto">
+        <section class="container-fluid bg-white" width="100%" height="auto" id="a propos">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
-             <h2 class="propos text-center">A Propos</h2>
+             <h2 class=" text-center">A Propos</h2>
             </div>
             </div>
             <div class="row moi">
@@ -64,7 +66,7 @@
             </div>
              <div class="row mt-5">
              <div class="moi col-md-4 col-xs-12">
-             <img src="image.jpg" width="370px" height="380px">
+             <img src="image.jpg" width="360px" height="380px" style="border-radius: 15px 15px;" class="shadow">
              </div>
              <div class="col-md-6 col-xs-12">
                <p class="text1">
@@ -75,7 +77,7 @@
              </div>
              </div>
         </section>
-        <section class="container-fluid mt-5" style="background-color: #EDE9E9; background-size: cover;">
+        <section class="container-fluid mt-5" style="background-color: #EDE9E9; background-size: cover;" id="competence">
           <div class="row">
             <div class="col-lg-12 col-md-12">
                <h2 class="competent text-center">Compétences</h2>
@@ -123,7 +125,7 @@
               </div>
             </div>
         </section>
-        <section class="container-fluid bg-white" width="100%" height="auto">
+        <section class="container-fluid bg-white" width="100%" height="auto" id="services">
           <div class="row">
             <div class="col-lg-12 col-md-12">
          <h2 class="propos text-center">Services</h2>
@@ -158,7 +160,7 @@
           </div>
         </div>
         </section>
-        <section class="container-fluid mt-5" style="background-color: #EDE9E9; background-size: cover;">
+        <section class="container-fluid mt-5" style="background-color: #EDE9E9; height: auto;" id="realisations">
           <div class="row">
             <div class="col-lg-12 col-md-12">
                <h2 class="competent text-center">Réalisations</h2>
@@ -171,23 +173,23 @@
             </div>
            <div class="row my-3 ms-3">
              <div class="col-md-4">
-              <img src="simplon.png" width="330px" height="218px">
+              <img src="simplon.png" width="330px" height="218px" class="shadow">
               <h5 class="text-start">site web simplon</h5>
-              <input type="button" class=" button text-white bg-danger p-2 rounded-pill mt-3" value="Voir Plus" style="border: none; width: 25%;">
+              <a href="https://diorkama.github.io/Entitees/" class="subheading mb-4">En Savoir Plus</a>
              </div>
              <div class="col-md-4">
-              <img src="maquete.png" width="316px" height="218px">
+              <img src="maquete.png" width="316px" height="218px" class="shadow">
               <h5 class="text-start">maquette kilife</h5>
-              <input type="button" class=" button text-white bg-danger p-2 rounded-pill mt-3" value="Voir Plus" style="border: none; width: 25%;">
+              <a href="maquette kilife barbershop.png" class="subheading">En Savoir Plus</a>
              </div>
              <div class="col-md-4">
-              <img src="Langerba-acceuil.png" width="325px" height="218px">
+              <img src="Langerba-acceuil.png" width="325px" height="218px" class="shadow">
               <h5 class="text-start">maquette langerba</h5>
-              <input type="button" class=" button text-white bg-danger p-2 rounded-pill mt-3" value="Voir Plus" style="border: none; width: 25%;">
+              <a href="https://diorkama.github.io/langerba/" class="subheading">En Savoir Plus</a>
              </div>
            </div>
         </section>
-        <section class="container-fluid bg-white" width="100%" height="auto">
+        <section class=" contact container-fluid bg-white my-4" width="100%" height="auto" id="contact">
           <div class="row">
             <div class="col-lg-12 col-md-12">
          <h2 class="propos text-center">Contact</h2>
@@ -215,35 +217,35 @@
               <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
             </svg>&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: bold;">diorkama@gmail.com</span>
            </p>
-         </div>
-         <div class="col-md-6">
+          </div>
+           <div class="col-md-4">
               <h5>Message</h5>
               <form method="POST" name="formSaisie" id="form">
                 <div class="fields">
-                    <div class="field name">
-                        <input type="text" placeholder="Name" name="nom" class="form-control" id="nom" required="">
-                    </div>
-                    <div class="field email">
-                        <input type="email" placeholder="Email" name="mail" class="form-control" id="mail" required="">
-                    </div>
+                <div class="field name">
+                <input type="text" placeholder="Name" name="nom" class="form-control" id="nom" required="">
                 </div>
-                <div class="field">
-                    <input type="text" placeholder="Sujet" name="sujet" class="form-control" id="sujet" required="">
+                <div class="field email">
+                  <input type="email" placeholder="Email" name="mail" class="form-control" id="mail" required="">
+                  </div>
+                  </div>
+                  <div class="field">
+                  <input type="text" placeholder="Sujet" name="sujet" class="form-control" id="sujet" required="">
+                  </div>
+                  <div class="field textarea">
+                  <textarea name="commenter" rows="4" cols="30iu" id="commenter" required=""placeholder="Message.." ></textarea>
+                  </div>
+                  <div class="button-area">
+                  <a href="#" class="subheading">Envoyer</a>
                 </div>
-                <div class="field textarea">
-                    <textarea name="commenter" rows="4" cols="30iu" id="commenter" required=""placeholder="Message.." ></textarea>
-                </div>
-                <div class="button-area">
-                  <input type="button" class=" button text-white bg-danger p-2 rounded-pill mt-3" value="Envoyer" style="border: none; width: 25%;">
-                </div>
-            </form>
-         </div>
-        </div>
+             </form>
+            </div>
+          </div>
         </section>
     </main>
-    <footer class="container-fluid bg-dark text-center" width="100%" height="auto">
-      <div>
-      <p>Crée par<span style="font-weight: bold;">DiorKama</span>&copy;tout droit reservé</p>
+    <footer class="container-fluid bg-dark text-center" width="100%" height="200vh">
+      <div class="text-center text-white">
+      <p>Crée par <span style="font-weight: bold;">DiorKama</span>&copy; tout droit reservé</p>
       </div>
    </footer>
   <script type="text/javascript">
@@ -251,10 +253,23 @@
   const header =document.querySelector('header');
   header.classList.toggle("sticky",window.scrollY > 0)
 });
+var i=0,text;
+text="Designer,Developpeur web/mobile"
+function typing(){
+  if(i<text.length){
+    document.getElementById("text").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing,50);
+  }
+}
+typing();
+function toggleMenu(){
+  const menutoggle = document.querySelector('.menutoggle');
+  const navbar = document.querySelector('.navbar');
+  menutoggle.classList.toggle('active');
+  navbar.classList.toggle('active');
+}
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<!--separer-->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>   
+  
 </body>
 </html>
